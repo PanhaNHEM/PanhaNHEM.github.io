@@ -23,15 +23,26 @@
             border-bottom: 2px solid #e2e8f0;
             padding-bottom: 2rem;
             margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
         }
-        h1 {
-            font-size: 2.5rem;
+        .profile-pic {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #2563eb;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header-text h1 {
+            font-size: 2.2rem;
             color: #0f172a;
         }
-        p.subtitle {
-            font-size: 1.25rem;
+        .header-text p.subtitle {
+            font-size: 1.1rem;
             color: #64748b;
-            margin-top: 0.5rem;
+            margin-top: 0.25rem;
         }
         section {
             margin-bottom: 2.5rem;
@@ -62,7 +73,6 @@
         li {
             margin-bottom: 0.5rem;
         }
-        /* Buttons and Links Styling */
         .btn-container {
             display: flex;
             gap: 0.75rem;
@@ -115,8 +125,11 @@
 <body>
 
     <header>
-        <h1>Nhem Panha</h1>
-        <p class="subtitle">Talent Acquisition Executive & Data Analytics Specialist</p>
+        <img src="profile.jpg" alt="Nhem Panha" class="profile-pic">
+        <div class="header-text">
+            <h1>Nhem Panha</h1>
+            <p class="subtitle">Talent Acquisition Executive & Data Analytics Specialist</p>
+        </div>
     </header>
 
     <section>
@@ -152,4 +165,14 @@
             <div class="btn-container">
                 <a href="https://t.me/PanhaRecruiter" target="_blank" class="btn btn-telegram">Telegram (@PanhaRecruiter)</a>
                 <a href="https://www.linkedin.com/in/panha-nhem-a032a9237/" target="_blank" class="btn btn-secondary">LinkedIn Profile</a>
-                <a href="mailto:nhempanha369@gmail.com
+                <a href="mailto:nhempanha369@gmail.com" class="btn btn-outline">Email Me</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Nhem Panha. Hosted on GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
