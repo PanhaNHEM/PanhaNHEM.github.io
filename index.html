@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nhem Panha - Portfolio</title>
+    <!-- Font Awesome CDN for Logos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -73,6 +75,7 @@
         li {
             margin-bottom: 0.5rem;
         }
+        /* Buttons and Icons Styling */
         .btn-container {
             display: flex;
             gap: 0.75rem;
@@ -80,23 +83,18 @@
             margin-top: 1rem;
         }
         .btn {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
             padding: 0.6rem 1.2rem;
-            background-color: #2563eb;
             color: #ffffff;
             text-decoration: none;
             border-radius: 6px;
             font-weight: 500;
-            transition: background-color 0.2s ease;
+            transition: all 0.2s ease;
         }
-        .btn:hover {
-            background-color: #1d4ed8;
-        }
-        .btn-secondary {
-            background-color: #0077b5;
-        }
-        .btn-secondary:hover {
-            background-color: #005582;
+        .btn i {
+            font-size: 1.1rem;
         }
         .btn-telegram {
             background-color: #229ed9;
@@ -104,12 +102,18 @@
         .btn-telegram:hover {
             background-color: #1a7fae;
         }
-        .btn-outline {
-            background-color: transparent;
+        .btn-linkedin {
+            background-color: #0077b5;
+        }
+        .btn-linkedin:hover {
+            background-color: #005582;
+        }
+        .btn-email {
+            background-color: #ffffff;
             color: #0f172a;
             border: 1px solid #cbd5e1;
         }
-        .btn-outline:hover {
+        .btn-email:hover {
             background-color: #f1f5f9;
         }
         footer {
@@ -125,7 +129,8 @@
 <body>
 
     <header>
-        <img src="profile.jpg" alt="Nhem Panha" class="profile-pic">
+        <!-- Corrected image filename from earlier check -->
+        <img src="profile.jpg.jpg" alt="Nhem Panha" class="profile-pic">
         <div class="header-text">
             <h1>Nhem Panha</h1>
             <p class="subtitle">Talent Acquisition Executive & Data Analytics Specialist</p>
@@ -163,9 +168,15 @@
         <div class="card">
             <p>Interested in collaborating or reviewing my work? Reach out directly through any of the channels below:</p>
             <div class="btn-container">
-                <a href="https://t.me/PanhaRecruiter" target="_blank" class="btn btn-telegram">Telegram (@PanhaRecruiter)</a>
-                <a href="https://www.linkedin.com/in/panha-nhem-a032a9237/" target="_blank" class="btn btn-secondary">LinkedIn Profile</a>
-                <a href="mailto:nhempanha369@gmail.com" class="btn btn-outline">Email Me</a>
+                <a href="https://t.me/PanhaRecruiter" target="_blank" class="btn btn-telegram">
+                    <i class="fa-brands fa-telegram"></i> Telegram
+                </a>
+                <a href="https://www.linkedin.com/in/panha-nhem-a032a9237/" target="_blank" class="btn btn-linkedin">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="mailto:nhempanha369@gmail.com" class="btn btn-email">
+                    <i class="fa-regular fa-envelope"></i> Email
+                </a>
             </div>
         </div>
     </section>
