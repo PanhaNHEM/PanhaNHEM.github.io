@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nhem Panha - Portfolio</title>
+    <title>Panha Nhem - Portfolio</title>
     <!-- Font Awesome CDN for Logos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
@@ -30,11 +30,11 @@
             gap: 1.5rem;
         }
         .profile-pic {
-            width: 110px;
-            height: 110px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid #2563eb;
+            border: 3px solid #0077b5;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .header-text h1 {
@@ -42,9 +42,29 @@
             color: #0f172a;
         }
         .header-text p.subtitle {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
+            color: #475569;
+            margin-top: 0.3rem;
+            font-weight: 500;
+        }
+        .header-text p.location {
+            font-size: 0.9rem;
             color: #64748b;
-            margin-top: 0.25rem;
+            margin-top: 0.2rem;
+        }
+        .skills-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 0.75rem;
+        }
+        .tag {
+            background-color: #e0f2fe;
+            color: #0369a1;
+            font-size: 0.8rem;
+            padding: 0.25rem 0.6rem;
+            border-radius: 4px;
+            font-weight: 600;
         }
         section {
             margin-bottom: 2.5rem;
@@ -53,7 +73,7 @@
             font-size: 1.5rem;
             color: #0f172a;
             margin-bottom: 1rem;
-            border-left: 4px solid #2563eb;
+            border-left: 4px solid #0077b5;
             padding-left: 0.5rem;
         }
         .card {
@@ -65,17 +85,29 @@
             box-shadow: 0 1px 3px rgba(0,0,0,0.05);
         }
         .card h3 {
-            margin-bottom: 0.5rem;
-            color: #1e293b;
+            margin-bottom: 0.2rem;
+            color: #0f172a;
+            font-size: 1.15rem;
+        }
+        .company {
+            font-weight: 600;
+            color: #0077b5;
+            font-size: 0.95rem;
+            margin-bottom: 0.2rem;
+        }
+        .date {
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-bottom: 0.75rem;
         }
         ul {
             list-style-type: square;
             padding-left: 1.2rem;
         }
         li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
+            font-size: 0.95rem;
         }
-        /* Buttons and Icons Styling */
         .btn-container {
             display: flex;
             gap: 0.75rem;
@@ -129,36 +161,89 @@
 <body>
 
     <header>
-        <!-- Corrected image filename from earlier check -->
-        <img src="profile.jpg" alt="Nhem Panha" class="profile-pic">
+        <img src="profile.jpg.jpg" alt="Panha Nhem" class="profile-pic">
         <div class="header-text">
-            <h1>Nhem Panha</h1>
-            <p class="subtitle">Talent Acquisition Executive & Data Analytics</p>
+            <h1>Panha Nhem</h1>
+            <p class="subtitle">Executive, Talent Acquisition | Banking & Technology HR Background</p>
+            <p class="location"><i class="fa-solid fa-location-dot"></i> Phnom Penh, Cambodia</p>
+            <div class="skills-tags">
+                <span class="tag">Power BI</span>
+                <span class="tag">SQL</span>
+                <span class="tag">Python</span>
+                <span class="tag">Talent Acquisition</span>
+                <span class="tag">HR Operations</span>
+            </div>
         </div>
     </header>
 
     <section>
         <h2>About Me</h2>
         <div class="card">
-            <p>Welcome to my personal portfolio! I specialize in Talent Acquisition, HR operations, and data analytics. I leverage data-driven insights, SQL, and analytical tools to optimize recruitment workflows, organize operational structures, and support strategic decision-making.</p>
+            <p>Talent Acquisition Executive with a strong background in Banking & Technology HR operations. Experienced in managing full recruitment lifecycles, developing workflow SOPs, and leveraging data analytics (Power BI, SQL, Python) to optimize workforce performance and strategic decision-making.</p>
         </div>
     </section>
 
     <section>
-        <h2>Key Projects & Focus Areas</h2>
+        <h2>Professional Experience</h2>
+        
         <div class="card">
-            <h3>Data Analytics & Technical Skills</h3>
+            <h3>Executive, HR & Talent Acquisition</h3>
+            <div class="company">ONLINE ISP Cambodia (Official)</div>
+            <div class="date">Mar 2025 – Present · 1 yr 8 mos</div>
             <ul>
-                <li>SQL database querying and relational data structuring</li>
-                <li>Data cleaning, processing, and advanced reporting in Microsoft Excel</li>
-                <li>Interactive data visualizations and reporting dashboards in Power BI</li>
+                <li>Lead full recruitment life cycles covering job posting, sourcing, interviewing, and onboarding.</li>
+                <li>Optimize talent pipelines and manage strategic employer branding initiatives.</li>
             </ul>
         </div>
+
         <div class="card">
-            <h3>HR Operations & Talent Strategy</h3>
+            <h3>Recruitment Executive</h3>
+            <div class="company">S&V Cambodia Jobs</div>
+            <div class="date">Dec 2023 – Mar 2025 · 1 yr 4 mos</div>
             <ul>
-                <li>Recruitment process Standard Operating Procedures (SOPs) & workflow design</li>
-                <li>Talent pipeline sourcing and channel community management</li>
+                <li>Managed local and international talent acquisition processes and business support functions.</li>
+                <li>Handled candidate coordination and pipeline management.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Human Resources Administrative Officer</h3>
+            <div class="company">ABA Bank</div>
+            <div class="date">Aug 2022 – Jan 2024 · 1 yr 6 mos</div>
+            <ul>
+                <li>Handled bank-level HR operations, employee relations, recruitment support, and benefits administration.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Human Resources Intern</h3>
+            <div class="company">AEON Specialized Bank (Cambodia) Plc.</div>
+            <div class="date">Mar 2022 – Aug 2022 · 6 mos</div>
+            <ul>
+                <li>Supported HR documentation, onboarding procedures, and compliance tracking.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education & Training</h2>
+        
+        <div class="card">
+            <h3>Professional Training in Data Analytics</h3>
+            <div class="company">Institute of Science and Technology Advanced Development - ISTAD</div>
+            <div class="date">Jun 2026 – Nov 2026</div>
+            <ul>
+                <li>Intensive data analytics training under the Skills Development Fund (SDF).</li>
+                <li>Focused on Excel, SQL, Power BI, and Python for dashboard building and business insights.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Bachelor's Degree in International Business</h3>
+            <div class="company">ACLEDA University of Business</div>
+            <div class="date">Completed</div>
+            <ul>
+                <li>Focused on global business strategies, economics, and management operations.</li>
             </ul>
         </div>
     </section>
@@ -166,7 +251,7 @@
     <section>
         <h2>Connect With Me</h2>
         <div class="card">
-            <p>Interested in collaborating or reviewing my work? Reach out directly through any of the channels below:</p>
+            <p>Reach out directly for professional networking, recruitment collaborations, or data analytics discussions:</p>
             <div class="btn-container">
                 <a href="https://t.me/PanhaRecruiter" target="_blank" class="btn btn-telegram">
                     <i class="fa-brands fa-telegram"></i> Telegram
@@ -182,7 +267,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 Nhem Panha. Hosted on GitHub Pages.</p>
+        <p>&copy; 2026 Panha Nhem. Hosted on GitHub Pages.</p>
     </footer>
 
 </body>
